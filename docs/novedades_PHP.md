@@ -46,7 +46,7 @@ class User {
 }
 ```
 
-## “Type variance” mejorada
+### “Type variance” mejorada
 
 Una clase hija puede sobrescribir el tipo de retorno de un método de la clase padre si ese tipo extiende del tipo que devuelve el padre.
 

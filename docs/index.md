@@ -5,20 +5,20 @@
 - [Instalación de symfony, creación nuevo proyecto, integración con git, permisos de ficheros, servidor integrado de php, controlador único](./instalacion.md)
 - [Estructura de un proyecto symfony](./estructura_directorios.md)
 - [Patrón MVC](./mvc.md)
-- Novedades PHP 7.4 y PHP 8
+- [Novedades PHP 7.4 y PHP 8.0](./novedades_PHP.md)
 
 ## Creación de la página de Home y menú público
 
 - [Introducción a Controllers](./controllers_intro.md)
 - [Introducción al Routing](./routing_intro.md)
 
-### Ejercicio
+### Ejercicio empezando con routing
 
-Creación de 3 rutas: 
+Creación de 3 rutas:
   
-  - /home
-  - /login
-  - /about-us
+- /home
+- /login
+- /about-us
 
 Cada una de estas rutas debe estar asociadas a una acción y responder con un h1 básico.
 
@@ -26,7 +26,7 @@ Cada una de estas rutas debe estar asociadas a una acción y responder con un h1
 
 - [Introducción a Twig](./twig_intro.md)
 
-### Ejercicio
+### Ejercicio empezando con twig
 
 Crear 1 plantilla de Twig para cada una de las páginas del ejercicio anterior.
 
