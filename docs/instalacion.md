@@ -1,10 +1,33 @@
 # Instalación
-
-
 ## Requisitos previos
 
 - PHP 7.2.5 o superior
 - Composer
+
+### Instalación de PHP (con MySQL y Apache)
+
+- WAMP para sistemas Windows: https://www.wampserver.com/en
+- LAMP para sistemas Linux: https://www.ionos.es/digitalguide/servidores/know-how/servidor-lamp-la-solucion-para-webs-dinamicas
+- MAMP para sistemas MAC: https://www.mamp.info/en/windows
+- XAMPP para cualquier sistema operativo: https://www.apachefriends.org/es/index.html
+
+Cualquiera de esos paquetes viene con versión gratuita que es más que suficiente.
+
+Comprueba que las siguientes extensiones de PHP están instaladas:
+
+Ctype, iconv, JSON, PCRE, Session, SimpleXML, and Tokenizer;
+
+Puedes comprobar las extensiones habilitadas actualmente usando php -m.
+
+https://symfony.com/doc/current/setup.html#technical-requirements
+
+### Instalación de composer
+
+https://getcomposer.org/download
+
+### Instalación de Visual Studio Code
+
+https://code.visualstudio.com
 
 ## Creación del proyecto
 
@@ -23,9 +46,7 @@
 ## Documentación adicional
 
 https://symfony.com/doc/current/setup.html
-## Ejercicio
-
-### Enunciado
+## Ejercicio Instalación
 
 Crear un proyecto website-skeleton y otro proyecto skeleton.
 

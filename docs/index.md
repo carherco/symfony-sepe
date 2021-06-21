@@ -78,9 +78,14 @@ Crear una nueva página de ejemplo de herencia de plantillas.
 
 Usar la herencia de plantillas con las páginas actuales de la aplicación.
 
+## Debug
+
+- Debug en controladores/servicios
+- Debug en Twig
+
 ## Acceso a base de datos. Doctrine.
 
-- Entidades simples
+- Entidades simples. Creación con Maker Bundle.
 - Entity Manager
 - Repository
 - Entidades relacionadas
@@ -93,7 +98,7 @@ Usar la herencia de plantillas con las páginas actuales de la aplicación.
 
 - Inspeccionar las consultas en el profiler.
 
-## Más doctrine
+## Más doctrine
 
 - DQL y Query Builder
 - Native SQL
@@ -113,13 +118,18 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 
 - El objeto Response
 - El objeto Request
-- Creación de otras páginas de la zona pública
-- Routing avanzado
+- Errores & excepciones
+- Páginas de error
+- Session
+- Mensajes Flash
+- CORS
+- Redirecting and Forwarding
 
-## Internacionalización (i18n)
+## Routing avanzado
 
-- Extracción de contenidos traducibles y actualización automática de los catálogos
-- Depuración de traducciones
+## Ejercicio routing avanzado
+
+- Creación de página para mostrar ficha de un fondo
 
 ## Servicios
 
@@ -127,7 +137,7 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 - Parameters
 - Configuración avanzada de servicios
 - Entornos y variables de entorno.
-- Archivos de configuración de symfony. 
+- Archivos de configuración de symfony.
 
 ## El componente Security
 
@@ -135,7 +145,6 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 - Autorización. Roles.
 - Voters
 - El bundle FOSUserBundle
-
 
 ## Caché
 
@@ -152,27 +161,10 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 - Comandos predefinidos.
 - Creación de comandos de consola personalizados.
 
-## Formularios
-
-- Formularios y validaciones. Mensajes Flash.
-- Eventos de formulario
-- Formulario dinámico basado en los propios datos del formulario
-- Formulario dinámico basado en el usuario
-- Temas personalizados
-- Validaciones personalizadas
-
-## Envío de correos
-
-## Eventos
-
-- El Event Dispatcher
-- Eventos personalizados
-- Listeners y Subscribers
-- Eventos del Kernel de Symfony
+## Ajax
 
 ## Creación de APIs REST con Symfony
 
-- Creación de proyecto de tipo skeleton (composer create-project symfony/skeleton my-project)
 - JsonResponse
 - LexitJwtBundle
 
@@ -184,18 +176,6 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 - Encoders
 - Cómo configurar qué atributos se serializan
 - Cómo convertir nombres de propiedades al serializar y des-serializar 
-
-## Componente Workflow
-
-## Gestión de recursos CSS y JavaScript
-
-- Manejo de archivos Sass y Less
-- Source Maps
-- Manejo de archivos TypeScript
-- Versionado de assets
-- Cómo pasar información de Twig a JavaScript
-
-## Testing automatizado
 
 ## Twig Avanzado
 
@@ -212,10 +192,7 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 - Cómo utilizar Matchers para activar o desactivar el profiler programáticamente
 - Cómo cambiar la ubicación del Profiler Storage
 
-## Flex
+## Proyecto Final
 
-- Recipes
-- Creación de bundles
-- Extensión de bundles
- 
-## Deploy y rendimiento
+Programación de un proyecto a elección del alumno.
+

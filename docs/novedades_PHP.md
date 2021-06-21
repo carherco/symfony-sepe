@@ -34,7 +34,15 @@ $prices = array_map(
 );
 ```
 
-### Tipado de propiedades 
+#### Ejemplo arrow function
+
+Transformar array de objetos Producto en array numérico de precios.
+
+#### Ejercicio arrow function
+
+Filtrar un array de Personas para que solamente aparezcan los mayores de 18 años.
+
+### Tipado de propiedades
 
 Ya se pueden tipar las propiades de las clases:
 
