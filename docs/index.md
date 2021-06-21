@@ -2,7 +2,7 @@
 
 ## Introducción
 
-- [Instalación de symfony, creación nuevo proyecto, integración con git, permisos de ficheros, servidor integrado de php, controlador único](./instalacion.md)
+- [Instalación](./instalacion.md)
 - [Estructura de un proyecto symfony](./estructura_directorios.md)
 - [Patrón MVC](./mvc.md)
 - [Novedades PHP 7.4 y PHP 8.0](./novedades_PHP.md)
