@@ -38,9 +38,78 @@ $prices = array_map(
 
 Transformar array de objetos Producto en array numérico de precios.
 
+Es decir convertir esto:
+
+```php
+$products = [
+  [
+    'id' => 234,
+    'name' => 'TV LED 75" - Samsung UE75AU7175UXXC',
+    'description' => 'TV LED 75" - Samsung UE75AU7175UXXC, UHD 4K, Crystal UHD, Smart TV, HDR10+, Tizen, Dolby Digital Plus, Plata',
+    'price' => 899.00
+  ],
+  [
+    'id' => 235,
+    'name' => 'Portátil - HP Laptop 15s-eq1018ns',
+    'description' => 'Portátil - HP Laptop 15s-eq1018ns, 15.6" HD, AMD Ryzen™ 3 3250U, 8 GB, 256 GB SSD, Windows 10S',
+    'price' => 399
+  ],
+  [
+    'id' => 236,
+    'name' => 'Frigorífico Combi - Bosch KGN39VIDA',
+    'description' => 'Frigorífico Combi - Bosch KGN39VIDA, No Frost, 100 W, 50 Hz, 368 l, Acero inoxidable antihuellas',
+    'price' => 569
+  ],
+];
+```
+
+En esto:
+
+```php
+$prices = [899, 399, 569];
+```
+
 #### Ejercicio arrow function
 
 Filtrar un array de Personas para que solamente aparezcan los mayores de 18 años.
+
+Es decir convertir esto:
+
+```php
+$personas = [
+  [
+    'name' => 'Carlos',
+    'age' => 21
+  ],
+  [
+    'name' => 'Carmen',
+    'age' => 16
+  ],
+  [
+    'name' => 'Carla',
+    'age' => 32
+  ],
+  [
+    'name' => 'Carlota',
+    'age' => 17
+  ],
+];
+```
+
+En esto:
+
+```php
+$mayoresDeEdad = [
+  [
+    'name' => 'Carlos',
+    'age' => 21
+  ],
+  [
+    'name' => 'Carla',
+    'age' => 32
+  ]
+];
+```
 
 ### Tipado de propiedades
 
