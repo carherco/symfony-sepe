@@ -58,7 +58,7 @@ class Catalogo
       'editorial' => ['nombre' => 'Anagrama'],
       'edicion' => 1818,
       'publicacion' => 1818,
-      'categorias' => 'ficcion'
+      'categoria' => 'ficcion'
     ]
   ];
 }
