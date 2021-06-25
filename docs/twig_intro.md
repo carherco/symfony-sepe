@@ -130,6 +130,16 @@ https://www.php.net/manual/es/types.comparisons.php
 
 https://twig.symfony.com/doc/3.x/tags/for.html
 
+### Ejercicio for
+
+Mostrar la lista de fondos que hay en Catalogo::$fondos
+
+Se debe mostrar al menos lo siguiente:
+
+- título del fondo
+- Nombre del autor principal (el primero de los autores)
+- Nombre de la editorial
+
 ## Set
 
 Puedes crear y asignar valores a variables con set:
