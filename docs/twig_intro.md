@@ -77,6 +77,57 @@ En el caso de que el nombre de un atributo tenga caracteres especiales o sea un 
 {{ attribute(fondo, campo }}
 ```
 
+## Estructuras de control
+
+### if
+
+```twig
+{% if product.stock > 10 %}
+   Available
+{% elseif product.stock > 0 %}
+   Only {{ product.stock }} left!
+{% else %}
+   Sold-out!
+{% endif %}
+```
+
+Las reglas de lo que se considera verdadero o falso son las mismas que en PHP
+
+```
+"" (string vacío) => false
+"     " (string con espacios en blanco) => true
+0 (número) =>	false
+"0" (string) => false
+[] (array vacío) =>	false
+array no vacío =>	true
+null => false
+objecto => true
+```
+
+https://www.php.net/manual/es/types.comparisons.php
+
+### for
+
+```twig
+{% for alumno in alumnos %}
+    <tr>
+        <td>{{ alumno.nombre }}</td>
+        <td>{{ alumno.apellidos }}</td>
+        <td>
+            <a href="{{ path('nota_index', {'id': alumno.id}) }}">Notas</a>
+        </td>
+        <td>
+            <a href="{{ path('asignatura_index', {'id': alumno.id}) }}">Asignaturas</a>
+
+        </td>
+    </tr>
+{% else %}
+    <tr>
+        <td colspan="9">no records found</td>
+    </tr>
+{% endfor %}
+```
+
 ## Set
 
 Puedes crear y asignar valores a variables con set:
