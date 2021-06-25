@@ -96,10 +96,10 @@ Las reglas de lo que se considera verdadero o falso son las mismas que en PHP
 ```
 "" (string vacío) => false
 "     " (string con espacios en blanco) => true
-0 (número) =>	false
+0 (número) => false
 "0" (string) => false
-[] (array vacío) =>	false
-array no vacío =>	true
+[] (array vacío) => false
+array no vacío => true
 null => false
 objecto => true
 ```
@@ -127,6 +127,8 @@ https://www.php.net/manual/es/types.comparisons.php
     </tr>
 {% endfor %}
 ```
+
+https://twig.symfony.com/doc/3.x/tags/for.html
 
 ## Set
 
