@@ -2,6 +2,8 @@
 
 El sistema de routing es el encargado de asociar rutas con acciones.
 
+En symfony, una ruta es un mapeo entre una url y una acción (de un controlador). Las rutas no se programan, sino que se configuran o definen.
+
 Las rutas se pueden configurar de 5 modos distintos:
 
 - En archivos de configuración con formato YAML
@@ -30,5 +32,7 @@ class BlogController extends AbstractController
     }
 }
 ```
+
+El orden de las rutas importa. La primera ruta que haga *match* con la petición, será la ruta escogida por symfony.
 
 https://symfony.com/doc/current/routing.html
