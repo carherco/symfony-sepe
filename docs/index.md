@@ -85,16 +85,16 @@ Usar la herencia de plantillas con las páginas actuales de la aplicación.
 
 ## Acceso a base de datos. Doctrine.
 
-- Entidades simples. Creación con Maker Bundle.
-- Entity Manager
-- Repository
-- Entidades relacionadas
+- [Instalación y configuración](./doctrine_intro.md)
+- [Entidades. El comando make:entity](./doctrine_entidades.md)
+- [Entity Manager](./doctrine_entity_manager.md)
+- [Repository](./doctrine_repositorios.md)
 
 ### Ejercicios
 
 - Crear entidades Fondo, Autor, Editorial y Categoría relacionándolas entre ellas.
 
-- Crear datos en la base de datos y mostrar el listado de catálogo.
+- Rehacer el listado de catálogo para leer los datos de la base de datos.
 
 - Inspeccionar las consultas en el profiler.
 
@@ -191,6 +191,14 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 - Cómo acceder a los datos del profiler programáticamente
 - Cómo utilizar Matchers para activar o desactivar el profiler programáticamente
 - Cómo cambiar la ubicación del Profiler Storage
+
+
+
+
+
+## Configuración del servidor web
+
+https://symfony.com/doc/current/setup/web_server_configuration.html
 
 ## Proyecto Final
 
