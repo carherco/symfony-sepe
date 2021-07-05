@@ -114,14 +114,15 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 
 - Fixtures (Sin bundle y con NelmioAliceBundle)
 
-## Controladores
+## Controladores y servicios
 
-- El objeto Response
-- El objeto Request
+- [Servicios](./services.md)
+- [El objeto Request](./request.md)
+- [El objeto Response](./response.md)
 - Errores & excepciones
 - Páginas de error
-- Session
-- Mensajes Flash
+- [Session](session.md)
+- [Mensajes Flash](./flash.md)
 - CORS
 - Redirecting and Forwarding
 
@@ -130,14 +131,6 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 ## Ejercicio routing avanzado
 
 - Creación de página para mostrar ficha de un fondo
-
-## Servicios
-
-- El contenedor de servicios y la inyección de dependencias
-- Parameters
-- Configuración avanzada de servicios
-- Entornos y variables de entorno.
-- Archivos de configuración de symfony.
 
 ## El componente Security
 
