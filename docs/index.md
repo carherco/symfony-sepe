@@ -139,16 +139,6 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 - Voters
 - El bundle FOSUserBundle
 
-## Caché
-
-## Logs
-
-- Cómo logear mensajes en diferentes ubicaciones
-- Manejadores de logs nativos
-- Cómo rotar los ficheros de log
-- Cómo utilizar un blog en un servicio
-- Añadir datos extra a los mensajes de log
-
 ## La consola de symfony
 
 - Comandos predefinidos.
@@ -172,22 +162,8 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 
 ## Twig Avanzado
 
-- Cómo generar otros formatos de salida (css, javascript, xml…)
-- Cómo inyectar variables globales
 - Sobreescribir plantillas de bundles de terceros
 - Crear plantillas sin controladores
-- Cómo crear una extensión de twig
-
-## Depuración en Symfony. El profiler
-
-- Cómo crear un Data Collector personalizado
-- Cómo acceder a los datos del profiler programáticamente
-- Cómo utilizar Matchers para activar o desactivar el profiler programáticamente
-- Cómo cambiar la ubicación del Profiler Storage
-
-
-
-
 
 ## Configuración del servidor web
 
@@ -196,4 +172,10 @@ https://symfony.com/doc/current/setup/web_server_configuration.html
 ## Proyecto Final
 
 Programación de un proyecto a elección del alumno.
+
+Los requisitos mínimos que debe cumplir este proyecto son los siguientes:
+
+- En la base de datos debemos tener al menos una relación 1 a muchos y al menos otra relación muchos a muchos.
+- Los usuarios deben poder registrarse y hacer login.
+- Debe haber al menos 2 tipos de usuarios.
 

@@ -63,7 +63,6 @@
 - Autenticación
 - Autenticación de usuarios
 - Carga de usuarios
-- Borrador de la lección
 - Denegar el acceso
 - Obtener el Objeto User
 - Cerrar Sesión
