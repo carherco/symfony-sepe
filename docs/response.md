@@ -87,6 +87,8 @@ Además si extendemos nuestra clase de Controller o de AbstractController, tenem
 
 - $this->redirect('http://symfony.com/doc');
 
+- $this->redirectToRoute("autor_new");
+
 - $this->json(array('data' => 123));
 
 - $this->file('/path/to/some_file.pdf');
