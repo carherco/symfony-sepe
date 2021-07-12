@@ -134,8 +134,7 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 
 ## El componente Security
 
-- Autenticación
-- Autorización. Roles.
+- [Autenticación y Autorización. Roles](./seguridad.md)
 - Voters
 - El bundle FOSUserBundle
 
