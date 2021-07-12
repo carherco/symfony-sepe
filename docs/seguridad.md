@@ -27,7 +27,9 @@ Incluiremos un campo “token” de tipo string para almacenar los tokens de acc
 
 El comando security:encode-password nos asiste a la hora de dar de alta manualmente usuarios en la base de datos, ya que le pasamos una contraseña y nos la devuelve encriptada.
 
-> php bin/console security:encode-password mypassword
+> php bin/console security:encode-password mypassword  // Hasta la versión 5.4
+
+> php bin/console security:encode-password mypassword  // A partir de la versión 5.3
 
 ## El comando make:auth
 
