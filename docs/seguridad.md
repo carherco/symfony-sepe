@@ -23,13 +23,13 @@ Todos los usuarios deben tener el rol ROLE_USER.
 
 Incluiremos un campo “token” de tipo string para almacenar los tokens de acceso y un campo token_expiration de tipo datetime para definir la validez del token.
 
-## El comando security:encode-password
+## El comando security:hash-password
 
 El comando security:encode-password nos asiste a la hora de dar de alta manualmente usuarios en la base de datos, ya que le pasamos una contraseña y nos la devuelve encriptada.
 
 > php bin/console security:encode-password mypassword  // Hasta la versión 5.4
 
-> php bin/console security:encode-password mypassword  // A partir de la versión 5.3
+> php bin/console security:hash-password mypassword  // A partir de la versión 5.3
 
 ## El comando make:auth
 
