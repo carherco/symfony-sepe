@@ -153,7 +153,41 @@ fetch(‘endpoint_url’, object)
     .then((responseData) => { console.log(responseData); });
 ```
 
+## CORS
 
+En el index.php se puede poner la respuesta de cors
+
+```php
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+header("Allow: GET, POST, OPTIONS, PUT, DELETE");
+$method = $_SERVER['REQUEST_METHOD'];
+if ($method == "OPTIONS") {
+    die();
+}
+```
+
+O en algún listener del Kernel de Symfony manipular la Response
+
+```php
+if ($event->getRequest()->getMethod() === 'OPTIONS') {
+    $event->setResponse(
+            new Response('', 204, [
+                'Access-Control-Allow-Origin' => '*',
+                'Access-Control-Allow-Credentials' => 'true',
+                'Access-Control-Allow-Methods' => 'GET, POST, PUT, DELETE, OPTIONS',
+                'Access-Control-Allow-Headers' => 'DNT, X-User-Token, Keep-Alive, User-Agent, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type',
+                'Access-Control-Max-Age' => 1728000,
+                'Content-Type' => 'text/plain charset=UTF-8',
+                'Content-Length' => 0
+            ])
+        );
+    return ;
+}
+```
+
+https://stackoverflow.com/questions/46400213/cors-api-with-symfony
 
 ## Enlaces de interés
 
