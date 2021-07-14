@@ -102,10 +102,10 @@ public function findAllGreaterThanPrice(int $price): array
         ORDER BY p.price ASC
         ';
     $stmt = $conn->prepare($sql);
-    $stmt->execute(['price' => $price]);
+    $result = $stmt->executeQuery(['price' => $price]);
 
     // returns an array of arrays (i.e. a raw data set)
-    return $stmt->fetchAllAssociative();
+    return $result->fetchAllAssociative();
 }
 ```
 
