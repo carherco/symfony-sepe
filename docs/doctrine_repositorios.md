@@ -32,6 +32,83 @@ $products = $repository->findBy(
 
 // look for *all* Product objects
 $products = $repository->findAll();
+```
+
+## Consultas con DQL
+
+DQL es el lenguaje de consultas de Doctrine.
+
+```php
+/**
+    * @return Product[]
+    */
+public function findAllGreaterThanPrice(int $price): array
+{
+    $entityManager = $this->getEntityManager();
+
+    $query = $entityManager->createQuery(
+        'SELECT p
+        FROM App\Entity\Product p
+        WHERE p.price > :price
+        ORDER BY p.price ASC'
+    )->setParameter('price', $price);
+
+    // returns an array of Product objects
+    return $query->getResult();
+}
+```
+
+https://www.doctrine-project.org/projects/doctrine-orm/en/2.6/reference/dql-doctrine-query-language.html#doctrine-query-language
+
+## Consultas con Query Builder
+
+Query Builder permite ir modificando una consulta sobre la marcha.
+
+```php
+public function findAllGreaterThanPrice(int $price, bool $includeUnavailableProducts = false): array
+{
+    // automatically knows to select Products
+    // the "p" is an alias you'll use in the rest of the query
+    $qb = $this->createQueryBuilder('p')
+        ->where('p.price > :price')
+        ->setParameter('price', $price)
+        ->orderBy('p.price', 'ASC');
+
+    if (!$includeUnavailableProducts) {
+        $qb->andWhere('p.available = TRUE');
+    }
+
+    $query = $qb->getQuery();
+
+    return $query->execute();
+
+    // to get just one result:
+    // $product = $query->setMaxResults(1)->getOneOrNullResult();
+}
+```
+
+https://www.doctrine-project.org/projects/doctrine-orm/en/2.6/reference/query-builder.html#the-querybuilder
+
+## Consultas con SQL
+
+```php
+public function findAllGreaterThanPrice(int $price): array
+{
+    $conn = $this->getEntityManager()->getConnection();
+
+    $sql = '
+        SELECT * FROM product p
+        WHERE p.price > :price
+        ORDER BY p.price ASC
+        ';
+    $stmt = $conn->prepare($sql);
+    $stmt->execute(['price' => $price]);
+
+    // returns an array of arrays (i.e. a raw data set)
+    return $stmt->fetchAllAssociative();
+}
+```
+
 
 
 ## Enlaces de interés
