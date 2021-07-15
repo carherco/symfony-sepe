@@ -64,9 +64,6 @@ https://twig.symfony.com/doc/3.x/templates.html
 
 ## Más Twig
 
-- filtros
-- funciones
-- Named arguments
 - include
 - extends y block
 
@@ -80,8 +77,8 @@ Usar la herencia de plantillas con las páginas actuales de la aplicación.
 
 ## Debug
 
-- Debug en controladores/servicios
-- Debug en Twig
+- Debug en controladores/servicios con dump()
+- Debug en Twig con {% dump %}
 
 ## Acceso a base de datos. Doctrine.
 
@@ -100,10 +97,10 @@ Usar la herencia de plantillas con las páginas actuales de la aplicación.
 
 ## Más doctrine
 
-- DQL y Query Builder
-- Native SQL
-- Ingeniería inversa
-- ArrayCollection
+- [DQL](https://www.doctrine-project.org/projects/doctrine-orm/en/2.9/reference/dql-doctrine-query-language.html#doctrine-query-language)
+- [Query Builder](https://www.doctrine-project.org/projects/doctrine-orm/en/2.9/reference/query-builder.html#the-querybuilder)
+- [Native SQL](https://www.doctrine-project.org/projects/doctrine-orm/en/2.9/reference/native-sql.html#native-sql)
+- [Generar entidades de una base de datos existente](https://symfony.com/doc/current/doctrine/reverse_engineering.html)
 - El problema de las N+1 queries
 
 ### Ejercicio Doctrine Problema N+1
@@ -112,7 +109,7 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 
 ## Instalación de Bundles
 
-- Fixtures (Sin bundle y con NelmioAliceBundle)
+- [NelmioAliceBundle](https://github.com/hautelook/AliceBundle)
 
 ## Controladores y servicios
 
@@ -127,6 +124,8 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 - Redirecting and Forwarding
 
 ## Routing avanzado
+
+- [Routing](./routing.md)
 
 ## Ejercicio routing avanzado
 

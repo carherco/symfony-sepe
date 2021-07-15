@@ -183,10 +183,10 @@ homepage:
 
 ```yml
 admin:
-    path: /wp-admin
+    path: /una-url
     controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController
     defaults:
-        route: sonata_admin_dashboard
+        route: una-ruta
         permanent: true
 ```
 
