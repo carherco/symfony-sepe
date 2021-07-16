@@ -6,32 +6,42 @@ Para realizar selects se utilizan los Repository. Hay un Repository asociado a c
 
 ![Doctrine](./images/select.png)
 
-Algunos métodos de los objetos respository son:
-
-![Doctrine](./images/repository_methods.png)
-
 ## Ejemplos
 
 ```php
-// look for a single Product by its primary key (usually "id")
-$product = $repository->find($id);
+// Buscar por la clave primaria
+$fondos = $repository->find(57);
 
-// look for a single Product by name
-$product = $repository->findOneBy(['name' => 'Keyboard']);
-// or find by name and price
-$product = $repository->findOneBy([
-    'name' => 'Keyboard',
-    'price' => 1999,
-]);
+// Argumentos de findBy
+findBy($where, $orderBy, $limit, $startAt);
 
-// look for multiple Product objects matching the name, ordered by price
-$products = $repository->findBy(
-    ['name' => 'Keyboard'],
-    ['price' => 'ASC']
+// Argumentos de findOneBy
+findBy($where, $orderBy);
+
+// Buscar por un campo
+$fondos = $repository->findBy(
+    ['titulo' => 'La casa de Bernarda Alba']
+);
+// o también
+$fondos = $repository->findByTitulo('La casa de Bernarda Alba');
+
+
+// Buscar por dos campos
+$fondos = $repository->findBy(
+    ['titulo' => 'La casa de Bernarda Alba', 'edicion' => 1997]
 );
 
-// look for *all* Product objects
-$products = $repository->findAll();
+// Filtrar por 1 campo y ordenar por 1 campo
+$fondos = $repository->findBy(
+    ['titulo' => 'La casa de Bernarda Alba'], 
+    ['edicion' => 'ASC']
+);
+
+// Límite de 10 resultados empezando por el registro 0, sin ordenar
+$fondos = $repository->findBy(['titulo' => 'La casa de Bernarda Alba'], [], 10, 0);
+ 
+// Recuperar TODOS los fondos
+$fondos = $repository->findAll();
 ```
 
 ## Consultas con DQL
