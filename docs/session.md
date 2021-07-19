@@ -24,22 +24,23 @@ use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 public function index(SessionInterface $session)
 {
-    // store an attribute for reuse during a later user request
-    $session->set('foo', 'bar');
+    // Guardar un dato en la sesión para utilizarlo en una petición posterior
+    $session->set('filters', ['title'=> 'Venecia', 'autor'=>'Reverte']);
 
-    // get the attribute set by another controller in another request
-    $foobar = $session->get('foobar');
+    // Obtener el valor de un dato de la sesión
+    $filters = $session->get('filters');
 
-    $foobar = $session->has('foobar');
+    // Preguntar si existe un dato en la sesión
+    $hasFilters = $session->has('filters');
 
-    // use a default value if the attribute doesn't exist
-    $filters = $session->get('filters', array());
+    // Usar un valor por defecto si no existe
+    $filters = $session->get('filters', []);
 
     //Destruye la sesión y crea otra nueva
-    $foobar = $session->invalidate();
+    $session->invalidate();
 
     //Borra todos los atributos de la sesión actual
-    $foobar = $session->clear();
+    $session->clear();
 }
 ```
 
