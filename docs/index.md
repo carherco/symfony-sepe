@@ -166,6 +166,9 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 
 https://symfony.com/doc/current/components/serializer.html
 
+## Comandos
+
+[Comandos](./commands.md)
 ## Configuración del servidor web
 
 https://symfony.com/doc/current/setup/web_server_configuration.html
