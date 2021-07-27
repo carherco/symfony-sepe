@@ -140,7 +140,7 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 
 - [Autenticación y Autorización. Roles](./seguridad.md)
 - [Autorización en los controladores y/o en los servicios](https://symfony.com/doc/current/security.html#add-code-to-deny-access)
-- [Voters](https://symfony.com/doc/current/security/voters.html)
+- [Voters](./voters.md)
 
 ## La consola de symfony
 
