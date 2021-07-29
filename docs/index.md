@@ -131,7 +131,7 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 
 - [Routing](./routing.md)
 
-## Ejercicio routing avanzado
+### Ejercicio routing avanzado
 
 - Creación de página para mostrar ficha de un fondo
 - Listado paginado
