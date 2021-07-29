@@ -145,7 +145,7 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 ## La consola de symfony
 
 - Comandos predefinidos => php bin/console
-- [Creación de comandos de consola personalizados](https://symfony.com/doc/current/console.html)
+- [Creación de comandos de consola personalizados](./commands.md)
 
 ## Ajax
 
@@ -166,9 +166,6 @@ Arreglar el problema de las N+1 queries en el listado del catálogo.
 
 https://symfony.com/doc/current/components/serializer.html
 
-## Comandos
-
-[Comandos](./commands.md)
 ## Configuración del servidor web
 
 https://symfony.com/doc/current/setup/web_server_configuration.html
