@@ -76,6 +76,21 @@ IS_REMEMBERED: Solamente los autenticados con una remember me cookie.
 
 IS_IMPERSONATOR: Cuando el usuario actual está impersonando (suplantando) a otro usuario.
 
+### Limitar el número de intentos de login
+
+```yml
+security
+    firewalls
+        main
+            login_throttling:
+                limiter:              ~     # id del servicio que implementa "Symfony\Component\HttpFoundation\RateLimiter\RequestRateLimiterInterface" (si quieres programar tu propio limitador)
+                max_attempts:         5
+                interval:             '1 minute'
+
+
+```
+
+
 ## Login para API JSON
 
 Para hacer un login para una api hay que:
