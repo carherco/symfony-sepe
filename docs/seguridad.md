@@ -79,9 +79,9 @@ IS_IMPERSONATOR: Cuando el usuario actual está impersonando (suplantando) a otr
 ### Limitar el número de intentos de login
 
 ```yml
-security
-    firewalls
-        main
+security:
+    firewalls:
+        main:
             login_throttling:
                 limiter:              ~     # id del servicio que implementa "Symfony\Component\HttpFoundation\RateLimiter\RequestRateLimiterInterface" (si quieres programar tu propio limitador)
                 max_attempts:         5
